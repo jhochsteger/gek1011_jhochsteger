@@ -22,12 +22,17 @@ include(example_auto_set_url.cmake)
 add_subdirectory(blink)
 
 # Add hello world example
-add_subdirectory(hello)
+# add_subdirectory(hello)
 
-add_subdirectory(mpu6050_i2c)
+# add_subdirectory(mpu6050_i2c)
 
 # Add FreeRTOS examples
 add_subdirectory(freertos)
+
+add_subdirectory(ampel)
+
+
+add_subdirectory(ampel_tiny)
 
 add_compile_options(-Wall
         -Wno-format          # int != int32_t as far as the compiler is concerned because gcc has int32_t as long int
