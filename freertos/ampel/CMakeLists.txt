@@ -4,6 +4,8 @@ add_executable(freertos_ampel
 
 # Add pico_stdlib library which aggregates commonly used features
 target_link_libraries(freertos_ampel pico_stdlib)
+target_link_libraries(freertos_ampel hardware_spi)
+target_link_libraries(freertos_ampel hardware_dma)
 pico_enable_stdio_usb(freertos_ampel 1)
 pico_enable_stdio_uart(freertos_ampel 0)
 

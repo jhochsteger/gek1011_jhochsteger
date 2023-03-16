@@ -19,7 +19,7 @@ pico_sdk_init()
 include(example_auto_set_url.cmake)
 
 # Add blink example
-add_subdirectory(blink)
+# add_subdirectory(blink)
 
 # Add hello world example
 # add_subdirectory(hello)
@@ -29,10 +29,11 @@ add_subdirectory(blink)
 # Add FreeRTOS examples
 add_subdirectory(freertos)
 
-add_subdirectory(ampel)
+# add_subdirectory(ampel)
 
+# add_subdirectory(ampel_tiny)
 
-add_subdirectory(ampel_tiny)
+add_subdirectory(spi)
 
 add_compile_options(-Wall
         -Wno-format          # int != int32_t as far as the compiler is concerned because gcc has int32_t as long int
